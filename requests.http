@@ -47,6 +47,29 @@ Content-Type: application/json
 
 @jwt_sheykly = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzAzMzh9.eTG0dpg4aMuHRq0NmVLObbI_lF_1SIsi5XOXoPcDXH8
 
+### User Sign up (create action)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Parker",
+  "email": "parker@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "parker@example.com",
+  "password": "password"
+}
+
+@jwt_parker = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjE2MzM3MzZ9.S2EwOHCY1R4TUDc5RgHVmp0oWWckdniCOEc4jBCHFnM
+
+
 ### Journals create
 POST http://localhost:3000/journals
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzAzMzh9.eTG0dpg4aMuHRq0NmVLObbI_lF_1SIsi5XOXoPcDXH8
@@ -55,4 +78,65 @@ Content-Type: application/json
 {
   "name": "End of the Month Reflections"
 }
+######################################################################################################
+# just more data
 
+###Journal_Entries Create 
+POST http://localhost:3000/journal-entries
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzAzMzh9.eTG0dpg4aMuHRq0NmVLObbI_lF_1SIsi5XOXoPcDXH8
+Content-Type: application/json
+
+{
+  "title": "Saturday, just another day",
+  "text": "Today is Saturday, August 27th, and it is just another day. I have lots of homework that I do not want to get to"
+}
+
+###
+POST http://localhost:3000/journal-entries
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzAzMzh9.eTG0dpg4aMuHRq0NmVLObbI_lF_1SIsi5XOXoPcDXH8
+Content-Type: application/json
+
+{
+  "title": "Saturday, just another day",
+  "text": "Today is Saturday, August 27th, and it is just another day. I have lots of homework that I do not want to get to"
+}
+
+###
+POST http://localhost:3000/journal-entries
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzAzMzh9.eTG0dpg4aMuHRq0NmVLObbI_lF_1SIsi5XOXoPcDXH8
+Content-Type: application/json
+
+{
+  "title": "Sunday, the last day of the weekend",
+  "text": "Today is Sunday, August 28th, I feel like being lazy before starting the week."
+}
+
+###
+POST http://localhost:3000/journal-entries
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzAzMzh9.eTG0dpg4aMuHRq0NmVLObbI_lF_1SIsi5XOXoPcDXH8
+Content-Type: application/json
+
+{
+  "title": "Monday, just another day",
+  "text": "Today is Monday, August 29th, ugh, Mondays. What can I say about it."
+}
+
+###
+POST http://localhost:3000/journal-entries
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzAzMzh9.eTG0dpg4aMuHRq0NmVLObbI_lF_1SIsi5XOXoPcDXH8
+Content-Type: application/json
+
+{
+  "title": "Tuesday, Almost the middle of the week!",
+  "text": "Today is Tuesday, August 30th, ugh, I had four classes, yay!"
+}
+
+###
+POST http://localhost:3000/journal-entries
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzAzMzh9.eTG0dpg4aMuHRq0NmVLObbI_lF_1SIsi5XOXoPcDXH8
+Content-Type: application/json
+
+{
+  "title": "Wednesday, Wednedays!! My magical days!",
+  "text": "I am looking forward to magic club, I will get to show my very own stack to the group"
+}
