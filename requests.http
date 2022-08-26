@@ -1,0 +1,10 @@
+###Journals Index 
+GET http://localhost:3000/journals
+
+### Journals Create 
+POST http://localhost:3000/journals
+Content-Type: application/json
+
+{
+  "name": "It has been a hell of a week!"
+}
