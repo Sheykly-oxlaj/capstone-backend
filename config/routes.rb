@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   post "/journal-entries" => "journal_entries#create"
 
   post "/users" => "users#create"
+
+  post "/sessions" => "sessions#create"
 end
