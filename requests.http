@@ -66,8 +66,9 @@ Content-Type: application/json
   "email": "parker@example.com",
   "password": "password"
 }
+####
 
-@jwt_parker = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjE2MzM3MzZ9.S2EwOHCY1R4TUDc5RgHVmp0oWWckdniCOEc4jBCHFnM
+@jwt_parker = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjE2MzUzOTR9.WxNlvsLTEV3EVaKN7Ukw1Bc1-peMaBcwUPLvtJ7rzmY
 
 
 ### Journals create
@@ -161,10 +162,10 @@ Content-Type: application/json
 
 ###
 POST http://localhost:3000/journal-entries
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzAzMzh9.eTG0dpg4aMuHRq0NmVLObbI_lF_1SIsi5XOXoPcDXH8
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjE2MzUzOTR9.WxNlvsLTEV3EVaKN7Ukw1Bc1-peMaBcwUPLvtJ7rzmY
 Content-Type: application/json
 
 {
-  "title": "Pizza!",
-  "text": "Today I decided to make pizza instad of buying. I got all the ingredients, pizza dough, cheese, pepperoni, not a long list, huh. I thought it was gonna be easy, which it was, except I ended up using a stainless water bottle to rolle the dough because i didnt have a rolling pin."
+  "title": "Sanwich!",
+  "text": "I got out of bed and made a sandwich."
 }
