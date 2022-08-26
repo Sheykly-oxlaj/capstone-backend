@@ -46,3 +46,13 @@ Content-Type: application/json
 }
 
 @jwt_sheykly = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzAzMzh9.eTG0dpg4aMuHRq0NmVLObbI_lF_1SIsi5XOXoPcDXH8
+
+### Journals create
+POST http://localhost:3000/journals
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzAzMzh9.eTG0dpg4aMuHRq0NmVLObbI_lF_1SIsi5XOXoPcDXH8
+Content-Type: application/json
+
+{
+  "name": "End of the Month Reflections"
+}
+
