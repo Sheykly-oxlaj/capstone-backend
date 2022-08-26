@@ -140,3 +140,31 @@ Content-Type: application/json
   "title": "Wednesday, Wednedays!! My magical days!",
   "text": "I am looking forward to magic club, I will get to show my very own stack to the group"
 }
+
+### Journals create
+POST http://localhost:3000/journals
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjE2MzM3MzZ9.S2EwOHCY1R4TUDc5RgHVmp0oWWckdniCOEc4jBCHFnM
+Content-Type: application/json
+
+{
+  "name": "Just my kitchen encounters"
+}
+
+### Journals create
+POST http://localhost:3000/journals
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjE2MzM3MzZ9.S2EwOHCY1R4TUDc5RgHVmp0oWWckdniCOEc4jBCHFnM
+Content-Type: application/json
+
+{
+  "name": "My everyday, not much"
+}
+
+###
+POST http://localhost:3000/journal-entries
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzAzMzh9.eTG0dpg4aMuHRq0NmVLObbI_lF_1SIsi5XOXoPcDXH8
+Content-Type: application/json
+
+{
+  "title": "Pizza!",
+  "text": "Today I decided to make pizza instad of buying. I got all the ingredients, pizza dough, cheese, pepperoni, not a long list, huh. I thought it was gonna be easy, which it was, except I ended up using a stainless water bottle to rolle the dough because i didnt have a rolling pin."
+}
