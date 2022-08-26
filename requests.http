@@ -24,3 +24,14 @@ Content-Type: application/json
   "title": "Friday, capstone day!!!!",
   "text": "Today is friday, August 26, and it is capstone day, I am still working on my backend because somehow I managed to break it, and decided it was best to just restart the whole thing"
 }
+
+### User Sign up (create action)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Sheykly",
+  "email": "sheykly@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
