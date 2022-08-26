@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get "/journal-entries" => "journal_entries#index"
   get "/journal-entries/:id" => "journal_entries#show"
   post "/journal-entries" => "journal_entries#create"
+
+  post "/users" => "users#create"
 end
