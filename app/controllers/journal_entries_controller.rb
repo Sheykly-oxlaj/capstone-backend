@@ -1,18 +1,18 @@
 class JournalEntriesController < ApplicationController
   def index
     journal_entries = JournalEntry.all
-    render :json journal_entries.as_json
+    render json: journal_entries.as_json
   end
 
   def show
     journal_entry = JournalEntry.find_by(id: params[:id])
-    render :json journal_entry.as_json
-  end 
+    render json: journal_entry.as_json
+  end
 
-  def create 
+  def create
     journal_entry = JournalEntry.new!(
       title: params[:title],
-      text: params[:text]
+      text: params[:text],
     )
     if journal_entry.save
       render json: journal_entry.as_json
