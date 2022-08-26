@@ -5,8 +5,8 @@ class JournalsController < ApplicationController
   end
 
   def create
-    journal = Journal.new (
-      name: params[:name]
+    journal = Journal.new(
+      name: params[:name],
     )
     if journal.save
       render json: journal.as_json
