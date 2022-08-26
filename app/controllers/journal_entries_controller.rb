@@ -10,7 +10,7 @@ class JournalEntriesController < ApplicationController
   end
 
   def create
-    journal_entry = JournalEntry.new!(
+    journal_entry = JournalEntry.new(
       title: params[:title],
       text: params[:text],
     )

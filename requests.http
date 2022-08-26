@@ -8,3 +8,19 @@ Content-Type: application/json
 {
   "name": "It has been a hell of a week!"
 }
+
+### Journal_Entries Index 
+GET http://localhost:3000/journal-entries
+
+
+###Journal_Entries Show
+GET http://localhost:3000/journal-entries/1
+
+###Journal_Entries Create 
+POST http://localhost:3000/journal-entries
+Content-Type: application/json
+
+{
+  "title": "Friday, capstone day!!!!",
+  "text": "Today is friday, August 26, and it is capstone day, I am still working on my backend because somehow I managed to break it, and decided it was best to just restart the whole thing"
+}
