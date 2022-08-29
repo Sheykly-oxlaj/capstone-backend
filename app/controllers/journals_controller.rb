@@ -1,4 +1,6 @@
 class JournalsController < ApplicationController
+  before_action :authenticate_user
+
   def index
     journals = current_user.journals
     render json: journals.as_json
