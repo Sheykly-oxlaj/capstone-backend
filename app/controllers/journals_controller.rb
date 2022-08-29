@@ -1,6 +1,6 @@
 class JournalsController < ApplicationController
   def index
-    journals = Journal.all
+    journals = current_user.journals
     render json: journals.as_json
   end
 

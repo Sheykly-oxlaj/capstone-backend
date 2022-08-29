@@ -1,12 +1,14 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NjE4NzY4MzR9.3KO4-x-5QDfqcuKd4ePzAboUzd7ekSzOltxQs1TOe2A
 ###Journals Index 
 GET http://localhost:3000/journals
 
 ### Journals Create 
 POST http://localhost:3000/journals
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "name": "It has been a hell of a week!"
+  "name": "Capstone log"
 }
 
 ### Journal_Entries Index 
@@ -22,7 +24,8 @@ Content-Type: application/json
 
 {
   "title": "Friday, capstone day!!!!",
-  "text": "Today is friday, August 26, and it is capstone day, I am still working on my backend because somehow I managed to break it, and decided it was best to just restart the whole thing"
+  "text": "Today is friday, August 26, and it is capstone day, I am still working on my backend because somehow I managed to break it, and decided it was best to just restart the whole thing",
+  "journal_id": 2
 }
 
 ### User Sign up (create action)
@@ -30,22 +33,24 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Sheykly",
-  "email": "sheykly@example.com",
+  "name": "Amanda",
+  "email": "amanda@example.com",
   "password": "password",
   "password_confirmation": "password"
 }
+
+
 
 ### Sessions create (login)
 POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "sheykly@example.com",
+  "email": "amanda@example.com",
   "password": "password"
 }
 
-@jwt_sheykly = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE2MzAzMzh9.eTG0dpg4aMuHRq0NmVLObbI_lF_1SIsi5XOXoPcDXH8
+
 
 ### User Sign up (create action)
 POST http://localhost:3000/users.json
