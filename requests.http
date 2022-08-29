@@ -13,13 +13,16 @@ Content-Type: application/json
 
 ### Journal_Entries Index 
 GET http://localhost:3000/journal-entries
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE4Nzg1OTV9.BOcVAzUliu4_Y2B-X2E7Vt1emsRY8gzibYfUvrOpNCU
 
 
 ###Journal_Entries Show
-GET http://localhost:3000/journal-entries/1
+GET http://localhost:3000/journal-entries/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE4Nzg1OTV9.BOcVAzUliu4_Y2B-X2E7Vt1emsRY8gzibYfUvrOpNCU
 
 ###Journal_Entries Create 
 POST http://localhost:3000/journal-entries
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE4Nzg1OTV9.BOcVAzUliu4_Y2B-X2E7Vt1emsRY8gzibYfUvrOpNCU
 Content-Type: application/json
 
 {
