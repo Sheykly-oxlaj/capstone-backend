@@ -1,11 +1,6 @@
 class JournalEntriesController < ApplicationController
   before_action :authenticate_user
 
-  def index
-    journal_entries = JournalEntry.where(journal_id: params[:journal_id])
-    render json: journal_entries.as_json
-  end
-
   def show
     journal_entry = JournalEntry.find_by(id: params[:id])
     if journal_entry.journal.user_id == current_user.id

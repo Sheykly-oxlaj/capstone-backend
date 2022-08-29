@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get "/journals" => "journals#index"
+  get "/journals/:id" => "journals#show"
   post "/journals" => "journals#create"
 
   get "/journal-entries" => "journal_entries#index"

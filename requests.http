@@ -1,34 +1,40 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE4ODU5OTV9.9EYh9LWjG45AWt5OxupB1h-uZ0VeoLOXyiaWaZ79PV0
 ###Journals Index 
 GET http://localhost:3000/journals
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE4Nzg1OTV9.BOcVAzUliu4_Y2B-X2E7Vt1emsRY8gzibYfUvrOpNCU
+Authorization: Bearer {{jwt}}
+
+###Journals Show  
+GET http://localhost:3000/journals/1
+Authorization: Bearer {{jwt}}
+
 
 ### Journals Create 
 POST http://localhost:3000/journals
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE4Nzg1OTV9.BOcVAzUliu4_Y2B-X2E7Vt1emsRY8gzibYfUvrOpNCU
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "name": "Capstone log"
+  "name": "What am I reading?"
 }
 
-### Journal_Entries Index 
-GET http://localhost:3000/journal-entries
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE4Nzg1OTV9.BOcVAzUliu4_Y2B-X2E7Vt1emsRY8gzibYfUvrOpNCU
+# ### Journal_Entries Index 
+# GET http://localhost:3000/journal-entries
+# Authorization: Bearer {{jwt}}
 
 
 ###Journal_Entries Show
-GET http://localhost:3000/journal-entries/4
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE4Nzg1OTV9.BOcVAzUliu4_Y2B-X2E7Vt1emsRY8gzibYfUvrOpNCU
+GET http://localhost:3000/journal-entries/1
+Authorization: Bearer {{jwt}}
 
 ###Journal_Entries Create 
 POST http://localhost:3000/journal-entries
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE4Nzg1OTV9.BOcVAzUliu4_Y2B-X2E7Vt1emsRY8gzibYfUvrOpNCU
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "title": "Friday, capstone day!!!!",
-  "text": "Today is friday, August 26, and it is capstone day, I am still working on my backend because somehow I managed to break it, and decided it was best to just restart the whole thing",
-  "journal_id": 2
+  "title": "Monday, first day of capstone week !!!!",
+  "text": "I thought everything was working, turns out not so much...",
+  "journal_id": 6
 }
 
 ### User Sign up (create action)
@@ -36,8 +42,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Amanda",
-  "email": "amanda@example.com",
+  "name": "Patrick",
+  "email": "patrick@example.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -54,6 +60,7 @@ Content-Type: application/json
 }
 
 
+########################################################################
 
 ### User Sign up (create action)
 POST http://localhost:3000/users.json
