@@ -9,6 +9,7 @@ class JournalsController < ApplicationController
   def create
     journal = Journal.new(
       name: params[:name],
+      user_id: current_user.id,
     )
     if journal.save
       render json: journal.as_json

@@ -1,10 +1,10 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NjE4NzY4MzR9.3KO4-x-5QDfqcuKd4ePzAboUzd7ekSzOltxQs1TOe2A
 ###Journals Index 
 GET http://localhost:3000/journals
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE4Nzg1OTV9.BOcVAzUliu4_Y2B-X2E7Vt1emsRY8gzibYfUvrOpNCU
 
 ### Journals Create 
 POST http://localhost:3000/journals
-Authorization: Bearer {{jwt}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE4Nzg1OTV9.BOcVAzUliu4_Y2B-X2E7Vt1emsRY8gzibYfUvrOpNCU
 Content-Type: application/json
 
 {
@@ -46,7 +46,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "amanda@example.com",
+  "email": "sheykly@example.com",
   "password": "password"
 }
 
