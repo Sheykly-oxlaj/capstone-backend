@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjE4ODU5OTV9.9EYh9LWjG45AWt5OxupB1h-uZ0VeoLOXyiaWaZ79PV0
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjIwNTE5Mzl9.rmgTp5dmmU5atKevG7CBLTuoOYgvRdLCOGbuOWtTxAc
 ###Journals Index 
 GET http://localhost:3000/journals
 Authorization: Bearer {{jwt}}

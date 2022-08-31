@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   post "/journals" => "journals#create"
 
   get "/journal-entries/:id" => "journal_entries#show"
-  post "/journal-entries" => "journal_entries#create"
+  post "/journals/:id/journal-entries" => "journal_entries#create"
 
   post "/users" => "users#create"
 
