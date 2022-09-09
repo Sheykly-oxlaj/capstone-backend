@@ -14,6 +14,7 @@ class JournalsController < ApplicationController
   def create
     journal = Journal.new(
       name: params[:name],
+      description: params[:description],
       user_id: current_user.id,
     )
     if journal.save
